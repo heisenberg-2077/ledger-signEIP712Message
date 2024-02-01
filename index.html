@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<div id="app">
+
+		<div>
+			<button onclick="signEIP712HashedMessage()">signEIP712HashedMessage</button>
+			<div>result:
+				<pre id="hashedMessageResult"></pre>
+			</div>
+			<div>signature: <span id="hashedMessageSign"></span></div>
+			<div>addressSignedWith: <span id="hashedMessageAccount"></span></div>
+
+		</div>
+		<br>
+
+		<div>
+			<button onclick="signEIP712Message()">signEIP712Message</button>
+			<div>result:
+				<pre id="messageResult"></pre>
+			</div>
+			<div>signature: <span id="messageSign"></span></div>
+			<div>addressSignedWith: <span id="messageAccount"></span></div>
+
+		</div>
+
+		<br>
+		<div>
+			<div>Current address: <span id="account"></span></div>
+		</div>
+	</div>
+
+	<script type="module" src="src/index.js">
+	</script>
+</body>
+
+</html>

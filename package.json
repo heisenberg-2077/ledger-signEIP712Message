@@ -1,0 +1,37 @@
+{
+  "name": "testapplication-ledger",
+  "version": "0.0.1",
+  "description": "Test Application",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^2.1.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^5.7.1",
+    "https-browserify": "^1.0.0",
+    "parcel": "^2.8.0",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.3",
+    "util": "^0.12.5"
+  },
+  "dependencies": {
+    "@ledgerhq/hw-app-eth": "latest",
+    "@ledgerhq/hw-transport-webhid": "latest",
+    "@metamask/eth-sig-util": "^7.0.1"
+  },
+  "alias": {
+    "@ledgerhq/devices": "@ledgerhq/devices/lib-es",
+    "@ledgerhq/evm-tools": "@ledgerhq/evm-tools/lib-es",
+    "@ledgerhq/domain-service/signers/index": "@ledgerhq/domain-service/lib-es/signers/index",
+    "@ledgerhq/cryptoassets/data/evm/index": "@ledgerhq/cryptoassets/lib-es/data/evm/index",
+    "@ledgerhq/live-network/network": "@ledgerhq/live-network/lib-es/network",
+    "@ledgerhq/cryptoassets/data/eip712": "@ledgerhq/cryptoassets/lib-es/data/eip712"
+  }
+}
